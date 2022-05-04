@@ -142,6 +142,8 @@ header img {
 }
 .content .content-item .follow div a {
   font-size: x-small;
+  margin: auto;
+  vertical-align: middle;
 }
 .content .content-item .follow div:hover {
   background-color: rgba(151, 19, 19, 0.493);

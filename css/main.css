@@ -1,13 +1,14 @@
 body {
   margin: 0;
-  background: url("../img/chair.JPG");
+  background: url("../img/chair_crop.JPG");
   background-attachment: fixed;
-  background-position: 50%;
+  background-position: 100%;
+  background-size: cover;
 }
 
 .wrapper {
   margin: auto;
-  font-family: "Amatic SC", sans-serif;
+  font-family: "Press Start 2P", sans-serif;
   color: white;
   display: flex;
   flex-direction: column;
@@ -55,21 +56,26 @@ header img {
   justify-content: center;
 }
 .menu .menu-item {
-  background-color: rgba(0, 0, 0, 0.753);
+  background-color: rgba(0, 0, 0, 0.363);
   margin: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  border: 1px;
+  border: 4px;
   border-color: white;
   border-style: solid;
-  font-size: 0.7em;
+}
+.menu .menu-item a {
+  font-size: small;
+}
+.menu .menu-item:hover {
+  background-color: rgba(151, 19, 19, 0.493);
 }
 
 .foreword {
   padding: 2em;
   display: flex;
   justify-content: center;
-  font-size: x-large;
+  font-size: x-small;
 }
 
 .content {
@@ -80,17 +86,28 @@ header img {
   align-items: center;
 }
 .content .content-item {
-  background-color: rgba(0, 0, 0, 0.651);
+  background-color: rgba(0, 0, 0, 0.363);
   width: 80%;
   margin-top: 1em;
-  display: block;
-  border: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 4px;
   border-color: white;
   border-style: solid;
 }
 .content .content-item .title {
   text-align: center;
-  font-size: xx-large;
+  font-size: medium;
+}
+.content .content-item .content-item-content {
+  font-size: x-small;
+}
+.content .content-item .map {
+  content: url("../img/map.png");
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .content .content-item .follow {
   margin: 2em;
@@ -99,13 +116,15 @@ header img {
   flex-wrap: wrap;
 }
 .content .content-item .follow div {
-  font-size: 0.5em;
   margin: 1em;
   padding-left: 10px;
   padding-right: 10px;
-  border: 1px;
+  border: 4px;
   border-color: white;
   border-style: solid;
+}
+.content .content-item .follow div a {
+  font-size: x-small;
 }
 .content .content-item .follow div:hover {
   background-color: rgba(151, 19, 19, 0.493);

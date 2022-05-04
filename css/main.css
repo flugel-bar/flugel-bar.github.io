@@ -58,14 +58,14 @@ header img {
 .menu .menu-item {
   background-color: rgba(0, 0, 0, 0.363);
   margin: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   border: 4px;
   border-color: white;
   border-style: solid;
 }
 .menu .menu-item a {
-  font-size: small;
+  font-size: x-small;
 }
 .menu .menu-item:hover {
   background-color: rgba(151, 19, 19, 0.493);
@@ -87,7 +87,7 @@ header img {
 }
 .content .content-item {
   background-color: rgba(0, 0, 0, 0.363);
-  width: 80%;
+  width: 90%;
   margin-top: 1em;
   display: flex;
   flex-direction: column;
@@ -102,6 +102,7 @@ header img {
 }
 .content .content-item .content-item-content {
   font-size: x-small;
+  padding: 0.5em;
 }
 .content .content-item .map {
   content: url("../img/map.png");
@@ -109,14 +110,28 @@ header img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.content .content-item .bar-menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 2px;
+}
+.content .content-item .bar-menu table {
+  margin: 5px;
+  border: 2px;
+  border-color: white;
+  border-style: solid;
+}
 .content .content-item .follow {
   margin: 2em;
+  margin-top: 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 .content .content-item .follow div {
-  margin: 1em;
+  margin: 0.4em;
   padding-left: 10px;
   padding-right: 10px;
   border: 4px;
@@ -128,4 +143,45 @@ header img {
 }
 .content .content-item .follow div:hover {
   background-color: rgba(151, 19, 19, 0.493);
+}
+
+.footer {
+  margin: auto;
+  border: none;
+  text-align: center;
+  font-family: "Press Start 2P", sans-serif;
+  color: white;
+}
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.tg td {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.tg th {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.tg .tg-0lax {
+  text-align: left;
+  vertical-align: top;
 }/*# sourceMappingURL=main.css.map */

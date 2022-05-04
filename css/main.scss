@@ -75,14 +75,14 @@ header {
     .menu-item {
         background-color: rgba(0, 0, 0, 0.363);
         margin: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
         border: 4px;
         border-color: white;
         border-style: solid;
 
         a {
-            font-size: small;
+            font-size: x-small;
         }
     }
     .menu-item:hover {
@@ -107,7 +107,7 @@ header {
 
     .content-item {
         background-color: rgba(0, 0, 0, 0.363);
-        width: 80%;
+        width: 90%;
         margin-top: 1em;
         //display: block;
         display: flex;
@@ -123,6 +123,7 @@ header {
 
         .content-item-content {
             font-size: x-small;
+            padding: 0.5em;
         }
 
         .map {
@@ -131,14 +132,30 @@ header {
             object-fit: cover;
         }
 
+        .bar-menu {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 2px;
+
+            table {
+                margin: 5px;
+                border: 2px;
+                border-color: white;
+                border-style: solid;
+            }
+        }
+
         .follow {
             margin: 2em;
+            margin-top: 0;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
 
             div {
-                margin: 1em;
+                margin: 0.4em;
                 padding-left: 10px;
                 padding-right: 10px;
                 border: 4px;
@@ -157,3 +174,20 @@ header {
     }
 }
 
+.footer {
+    margin: auto;
+    border: none;
+    text-align: center;
+    font-family: 'Press Start 2P', sans-serif;
+    color: white;
+}
+
+
+
+//menu table styles
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
